@@ -1,20 +1,25 @@
+<?php include "includes/header.php";
 
-<!DOCTYPE html>
-<html>
-<?php include_once 'includes/header.php'; ?>
-<body>
+$flavors = [
+    "Original" => 25,
+    "Chilimansi" => 30,
+    "Sweet & Spicy" => 30,
+    "Spicy" => 35
+];
 
-<h3>Pancit Canton Flavors</h3>
+echo "<h2 class='for-each-title'>Menu</h2>";
+echo "<div class='menu-grid'>";
 
-<?php
-$cs = "(Coming Soon!)";
-$colors = array("Spicy", "Calamansi", "Sweet", "Original", "Chilli Mansi $cs", "Sweet n Spicy $cs", "Original n Sweet $cs");
-
-foreach ($colors as $x) {
-  echo "$x <br>";
+foreach ($flavors as $name => $price) {
+    echo "
+        <div class='menu-item'>
+            <h3>$name</h3>
+            <p>₱$price</p>
+        </div>
+    ";
 }
-?>
 
-<?php include_once 'includes/footer.php'; ?>
-</body>
-</html>
+echo "</div>";
+
+include "includes/footer.php";
+?>
