@@ -1,5 +1,6 @@
-<?php 
-    echo '<footer>
-    <p>Created by: Gabriel C. Canlas &copy; 2025</p>
-    </footer>';
-?>
+    </main>
+    <footer>
+        <p>&copy; 2025 Pancit Canton Store by Gabriel Canlas</p>
+    </footer>
+</body>
+</html>
