@@ -1,24 +1,12 @@
-<?php
-$counter = 1;
-$packs = 10;
-$price = 15.99;
-?>
-<!DOCTYPE html>
-<html>
-    <?php include_once 'includes/header.php'; ?>
-<body>
-    <h3>Prices:</h3>
+<?php include "includes/header.php";
 
-    <?php
-    while ($counter < $packs) {
-        echo $counter;
-        echo ' pieces of pancit canton costs P';
-        echo $price * $counter;
-        echo '<br>';
-        $counter++;
-    }
-    ?>
+$count = 1;
 
-    <?php include_once 'includes/footer.php'; ?>
-</body>
-</html>
+echo "<h2>Preparing your noodles...</h2>";
+
+while ($count <= 3) {
+    echo "Step $count completed.<br>";
+    $count++;
+}
+
+include "includes/footer.php"; ?>
