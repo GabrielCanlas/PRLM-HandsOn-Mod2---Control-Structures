@@ -1,15 +1,16 @@
-
-    <head>
-        
-        <h1>The Lucky Me Store</h1>
-        <link rel='stylesheet' href='css/styles.css' />
-    </head>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pancit Canton Store</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>PANCIT CANTON STORE</h1>
         <nav>
-            <a href="pancit.php">The Lucky Me Store</a>
-            <a href="if_statement.php">If Statement</a>
-            <a href="if_else.php">If-Else Statement</a>
-            <a href="if_else_if.php">If Else If Statement</a>
-            <a href="match.php">Match Expressions</a>
-            <a href="while.php">While Loop</a>
-            <a href="for_each.php">Foreach Loops</a>
+            <a href="pancit.php">Home</a>
+            <a href="for_each.php">Menu</a>
+            <a href="match.php">Order</a>
         </nav>
+    </header>
+    <main>
