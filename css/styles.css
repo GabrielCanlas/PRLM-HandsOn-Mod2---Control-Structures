@@ -1,124 +1,149 @@
-@import url("https://fonts.googleapis.com/css?family=Playfair+Display:900|Raleway:500,700");
-
-html, body {
-  height: 100%;
-}
-
 body {
-  font-family: "Raleway", sans-serif;
-  background-color: #850825;
-  color: #fbccbf;
-  margin: 0px;
-  background-image: url("../img/pancit.jpg");
-  background-size: 245px 380px;
-  background-position: right top;
-  background-repeat: repeat-y;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #fff8e6; 
 }
 
-h1{
-  font-family: "Playfair Display", serif;
-  padding: 10px 20px 12px 20px;
-  margin: 0px;
-  color: #fcba63;
+header {
+    background: #ff7a00; 
+    color: white;
+    padding: 25px;
+    text-align: center;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.2);
 }
 
-
-
-h2 {
-  font-weight: 700;
-  font-size: 1em;
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
-  padding: 20px;
-  margin: 0px;
-}
-
-p {
-  padding: 6px 20px 6px 20px;
-  margin: 0px;
-}
-
-table {
-  background-color: #850825;
-  margin: 10px;
-  padding: 5px;
-  border: 1px solid #fbccbf;
-  border-spacing: 0px;
-}
-  
-th {
-  text-transform: uppercase;
-  text-align: left;
-  font-size: 0.75em;
-  letter-spacing: 0.2em;
-  padding: 5px 10px;
-  background-color: #fbccbf;
-  color: #850825;
-}
-  
-td {
-  padding: 5px 10px;
-}
-
-a {
-  color: #fbccbf;
-  letter-spacing: 1px;
-  font-weight: 600;
-  font-style: normal;
-  text-decoration: none;
-}
-
-nav {
-  padding: 0.5em;
-  background-color: #730720;
+header h1 {
+    margin: 0;
+    font-size: 32px;
+    letter-spacing: 2px;
+    font-weight: bold;
 }
 
 nav a {
-  text-transform: uppercase;
-  padding: .5em;
+    color: white;
+    margin: 0 18px;
+    font-size: 18px;
+    font-weight: 500;
+    text-decoration: none;
+    padding: 5px 12px;
+    border-radius: 5px;
+    transition: 0.3s;
 }
+
 nav a:hover {
-  color: #fff;
-}
- 
-.button {
-  background-color: #fbccbf;
-  color: #850825;
-  border-color: #fbccbf;
-  border-radius: 300px;
-  -webkit-transition: .3s background-color linear;
-  -moz-transition: .3s background-color linear;
-  -o-transition: .3s background-color linear;
-  transition: .3s background-color linear;
-  display: inline-block;
-  padding: 10px 20px;
-  margin-top: 10px;
-  font-weight: 600;
-  font-style: normal;
-  letter-spacing: 1px;
-  text-align: center;
-  text-decoration: none;
-  text-transform: uppercase;
+    background: rgba(255,255,255,0.25);
 }
 
-.button:hover {
-  background-color: #fcba63;
-  border-radius: 300px;
-  -webkit-transition: .1s background-color linear;
-  -moz-transition: .1s background-color linear;
-  -o-transition: .1s background-color linear;
-  transition: .1s background-color linear;
-  color: #850825;
-}
-  
-.offer {
-  text-transform: uppercase;  
+main {
+    padding: 30px;
+    display: flex;
+    justify-content: center;
 }
 
+.card {
+    background: white;
+    padding: 20px;
+    width: 350px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+    text-align: center;
+}
+
+img {
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+    border-radius: 15px;
+    margin-bottom: 15px;
+}
+
+/* FOOTER */
 footer {
-  background-color: #730720;
-  padding: 10px;
-  width: 100%;
-  position: fixed;
-  bottom: 0;
+    background: #ff7a00;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 30px;
+    font-weight: 500;
+    box-shadow: 0 -3px 10px rgba(0,0,0,0.2);
+}
+
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.menu-item {
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.menu-item h3 {
+    margin: 0;
+    font-size: 22px;
+    color: #ff7a00;
+}
+
+.menu-item p {
+    margin-top: 8px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.order-box {
+    background: white;
+    width: 350px;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 3px 12px rgba(0,0,0,0.15);
+    margin: 20px auto;
+    text-align: center;
+}
+
+.order-box label {
+    font-size: 18px;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.order-box select {
+    padding: 8px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    margin-bottom: 15px;
+}
+
+.order-box button {
+    margin-top: 10px;
+    padding: 8px 15px;
+    background: #ff7a00;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.order-box button:hover {
+    background: #ff9500;
+}
+
+.order-result {
+    text-align: center;
+    font-size: 22px;
+    color: #ff7a00;
+    margin-top: 20px;
+}
+
+.for-each-title {
+    margin-top: 40px;
+    display: block;
 }
