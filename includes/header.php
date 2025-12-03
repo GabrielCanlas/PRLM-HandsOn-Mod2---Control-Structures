@@ -11,6 +11,7 @@
             <a href="pancit.php">Home</a>
             <a href="for_each.php">Menu</a>
             <a href="match.php">Order</a>
+            <a href="stock_monitor.php">Stock Monitor</a>
         </nav>
     </header>
     <main>
